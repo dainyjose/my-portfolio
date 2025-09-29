@@ -1,0 +1,65 @@
+.tech_skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 110rem;
+  margin: 1rem auto;
+  padding-bottom: 50px;
+}
+
+.tech_skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tech-icons {
+  position: relative;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: var(--color-primary);
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icons:hover {
+  transform: scale(1.1);
+  color: var(--color-light);
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -0.9rem;
+  left: 55%;
+  transform: translateX(-50%);
+  background: var(--color-bg-variant);
+  color: var(--color-primary);
+  font-size: 0.65rem;
+  border-radius: 1px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.tech-icons:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(5px);
+}
+
+@media screen and (max-width: 600px) {
+  .tech_skill-container {
+    gap: 0.1rem;
+  }
+}
