@@ -78,6 +78,17 @@ const Blogs = () => {
     },
     {
       id: 7,
+      link: "https://dev.to/dainyjose/implementing-push-notifications-in-react-native-using-firebase-and-notifee-ahl",
+      title:
+        "Implementing Push Notifications in React Native Using Firebase and Notifee",
+      description:
+        "Learn how to implement push notifications in a React Native app using Firebase Cloud Messaging (FCM) and Notifee. This guide covers setting up Firebase, configuring Notifee, handling notifications in foreground/background, and customizing notification appearance.",
+      time: "4 min read",
+      topic: "FCM Notifications",
+      tags: "react-native, firebase, FCM, notification",
+    },
+    {
+      id: 8,
       link: "https://dev.to/dainyjose/git-complete-commands-cheat-sheet-for-developers-96j",
       title: "Git Complete Commands Cheat Sheet for Developers",
       description:
@@ -87,7 +98,7 @@ const Blogs = () => {
       tags: "Git, Productivity, Tools",
     },
     {
-      id: 8,
+      id: 9,
       link: "https://dev.to/dainyjose/15-must-have-vs-code-extensions-for-react-native-development-2025-5g37",
       title:
         "15 Must-Have VS Code Extensions for React Native Development (2025)",
@@ -112,30 +123,20 @@ const Blogs = () => {
         autoplay={{ delay: 9000, disableOnInteraction: false }} // auto slide
       >
         {blogs.map((blog) => (
-          <SwiperSlide
-            className="blogs_card"
-            key={blog.id}
-          >
+          <SwiperSlide className="blogs_card" key={blog.id}>
             <span className="blog-topic">{blog.topic}</span>
             <h5 className="blog_title">{blog.title}</h5>
             <p className="blog_description">{blog.description}</p>
             <div className="blog-tags">
               {blog.tags.split(",").map((tag, index) => (
-                <span
-                  className="blog-hashtag"
-                  key={index}
-                >
+                <span className="blog-hashtag" key={index}>
                   #{tag.trim()}
                 </span>
               ))}
             </div>
             <div className="blog-footer">
               <span>⏱{" " + blog.time}</span>
-              <a
-                href={blog.link}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={blog.link} target="_blank" rel="noreferrer">
                 Read More →
               </a>
             </div>

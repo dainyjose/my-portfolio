@@ -38,7 +38,11 @@ body {
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  background-image: radial-gradient(
+    var(--color-bg-variant) 1px,
+    transparent 1px
+  );
+  background-size: 5px 5px;
 }
 
 .container {
