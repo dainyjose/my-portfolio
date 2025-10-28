@@ -13,16 +13,19 @@ const ExtraInfo = () => {
       <h2>Location • Skills • Interests • Education</h2>
 
       <div className=" container extra-container">
-        <div className="extra-item">
-          <FaMapMarkerAlt className="extra-icon" />
-          <h3>Location</h3>
-          <p>
-            Calicut, Kerala,
-            <br /> India
-          </p>
-        </div>
+       
+      <div className="extra-item">
+        <FaMapMarkerAlt className="extra-icon" />
+        <h3>Location</h3>
+        <p>
+          Bangalore, Karnataka, India <br />
+          <span>
+            (Originally from Calicut, Kerala)
+          </span>
+        </p>
+      </div>
 
-        <div className="extra-item">
+              <div className="extra-item">
           <FaLightbulb className="extra-icon" />
           <h3>Soft Skills</h3>
           <ul>
