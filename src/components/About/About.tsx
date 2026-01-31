@@ -30,7 +30,7 @@ const About = () => {
               <LiaDev className="about__icon" />
 
               <h5>Dev Blogs</h5>
-              <small>10+ Blogs</small>
+              <small>15+ Blogs</small>
             </article>
             <article className="about__card learning">
               <GrTechnology className="about__icon" />
@@ -42,7 +42,7 @@ const About = () => {
               <MdOutlineMilitaryTech className="about__icon" />
 
               <h5>Tech Stack</h5>
-              <small>15+ Tools & Skills</small>
+              <small>25+ Tools & Skills</small>
             </article>
           </div>
           <div className="about__me_content">
