@@ -46,43 +46,36 @@ import "./TechSkills.css";
 
 const TechSkills = () => {
   const techStack = [
-    // 🔹 Core Frontend & Mobile
-    { icon: <DiReact />, name: "React / React Native" },
+    // 🔹 Mobile Development (Highest Priority)
+    { icon: <DiReact />, name: "React Native" },
     { icon: <SiTypescript />, name: "TypeScript" },
     { icon: <DiJavascript1 />, name: "JavaScript" },
     { icon: <SiRedux />, name: "Redux" },
-    { icon: <SiHtml5 />, name: "HTML" },
-    { icon: <SiCss3 />, name: "CSS" },
     { icon: <SiExpo />, name: "Expo" },
-    { icon: <SiVite />, name: "Vite" },
 
-    // 🔹 Backend
+    // 🔹 Backend & APIs
     { icon: <DiNodejs />, name: "Node.js" },
     { icon: <SiExpress />, name: "Express.js" },
-    { icon: <SiPython />, name: "Python" },
     { icon: <SiFirebase />, name: "Firebase" },
     { icon: <SiCloudinary />, name: "Cloudinary" },
 
     // 🔹 Database
     { icon: <DiMongodb />, name: "MongoDB" },
     { icon: <SiMysql />, name: "MySQL / SQL" },
-    { icon: <SiXampp />, name: "XAMPP" },
 
     // 🔹 Testing
     { icon: <SiJest />, name: "Jest" },
 
-    // 🔹 Tools & Collaboration
+    // 🔹 Development Tools
     { icon: <DiGit />, name: "Git / Git Bash" },
-    { icon: <SiNpm />, name: "npm" },
-    { icon: <SiBun />, name: "Bun" },
-    { icon: <SiBitbucket />, name: "Bitbucket" },
     { icon: <SiPostman />, name: "Postman" },
-    { icon: <SiJira />, name: "Jira" },
-    { icon: <SiFigma />, name: "Figma" },
-    { icon: <SiDocker />, name: "Docker" },
+    { icon: <SiBitbucket />, name: "Bitbucket" },
     { icon: <VscVscode />, name: "VS Code" },
     { icon: <SiAndroidstudio />, name: "Android Studio" },
     { icon: <SiXcode />, name: "Xcode" },
+    { icon: <SiJira />, name: "Jira" },
+    { icon: <SiFigma />, name: "Figma" },
+    { icon: <SiNpm />, name: "npm" },
 
     // 🔹 Deployment & Hosting
     { icon: <SiHeroku />, name: "Heroku" },
@@ -90,27 +83,23 @@ const TechSkills = () => {
     { icon: <SiCloudflare />, name: "Cloudflare" },
     { icon: <SiCpanel />, name: "cPanel" },
 
-    // 🔹 Platforms & OS
+    // 🔹 Platforms
     { icon: <FaAndroid />, name: "Android" },
     { icon: <FaApple />, name: "iOS" },
     { icon: <ImWindows />, name: "Windows" },
     { icon: <SiMacos />, name: "macOS" },
 
-    // 🔹 Deployment Stores
-    { icon: <FaGooglePlay />, name: "Play Store Deployment" },
-    { icon: <FaAppStoreIos />, name: "App Store Deployment" },
+    // 🔹 App Publishing
+    { icon: <FaGooglePlay />, name: "Google Play Console" },
+    { icon: <FaAppStoreIos />, name: "App Store Connect" },
   ];
-
   return (
     <section id="tech_skill">
       <h5>The Skills I Have</h5>
       <h2>Skills</h2>
       <div className=" container tech_skill-container">
         {techStack.map((tech, index) => (
-          <div
-            key={index}
-            className="tech-icons"
-          >
+          <div key={index} className="tech-icons">
             {tech.icon}
             <span className="tooltip">{tech.name}</span>
           </div>

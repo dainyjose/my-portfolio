@@ -18,7 +18,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ year</small>
+              <small>3+ years</small>
             </article>
             <article className="about__card">
               <VscRepoClone className="about__icon" />
@@ -34,9 +34,8 @@ const About = () => {
             </article>
             <article className="about__card learning">
               <GrTechnology className="about__icon" />
-
               <h5>Learning Now</h5>
-              <small>MERN, Redux</small>
+              <small>MERN Stack & Redux</small>
             </article>
             <article className="about__card">
               <MdOutlineMilitaryTech className="about__icon" />
@@ -49,46 +48,51 @@ const About = () => {
             <p>
               I’m a passionate{" "}
               <span className="highlight">
-                Hybrid App & Full-Stack Developer
+                React Native Mobile Application Developer
               </span>{" "}
-              with
-              <span className="highlight"> 3 years of experience</span> building
-              cross-platform mobile and web applications.
+              with <span className="highlight">3+ years of experience</span>{" "}
+              building scalable cross-platform mobile applications.
+            </p>
+
+            <p>
+              My primary focus is mobile development using{" "}
+              <span className="highlight">
+                React Native, TypeScript, and Redux
+              </span>
+              , creating high-performance applications with clean architecture
+              and maintainable code.
+            </p>
+
+            <p>
+              I also work with the <span className="highlight">MERN stack</span>{" "}
+              (MongoDB, Express, React.js, Node.js) to build backend services,
+              APIs, and personal projects.
             </p>
             <p>
-              Specializing in{" "}
-              <span className="highlight">React Native & MERN stack</span>, I
-              focus on delivering apps with{" "}
+              I have experience integrating real-world mobile features such as{" "}
               <span className="highlight">
-                clean architecture, secure integrations, and smooth user
-                experiences
+                payments, Google Maps, push notifications, Firebase analytics,
+                Crashlytics, and App Store & Play Store deployments
               </span>
               .
             </p>
             <p>
-              Beyond coding, I enjoy{" "}
+              I enjoy{" "}
               <span className="highlight">
-                solving problems, learning new technologies, and bringing
-                creative ideas to life
+                solving complex problems, improving application performance, and
+                building scalable solutions
               </span>
-              . Every project is an opportunity for me to grow, collaborate, and
-              create something meaningful. 🚀
+              . Every project is an opportunity to learn, collaborate, and
+              create meaningful digital experiences. 🚀
             </p>
           </div>
-          <a
-            href="#contact"
-            className="btn btn-primary about_contact"
-          >
-            Let's Talk...
-            <TbMessageChatbot className="icon" />
+          <a href="#contact" className="btn btn-primary about_contact">
+            Let's Talk <TbMessageChatbot className="icon" />
           </a>
         </div>
         <div className="about__me">
           <div className="about__me-image">
-            <img
-              src={ME}
-              alt="me"
-            />
+            <img src={ME} alt="me" />
           </div>
         </div>
       </div>
