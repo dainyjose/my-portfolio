@@ -7,7 +7,7 @@ const Portfolio = () => {
       id: 1,
       title: "RN Expo Bare Template",
       description:
-        "A boilerplate project setup with Expo bare workflow and TypeScript, including configured navigation, Redux, and environment management for faster project initialization.",
+        "Created a reusable React Native starter template that speeds up project setup with pre-configured navigation, Redux, environment management, and TypeScript support — reducing repetitive setup work for new applications.",
       technologies:
         "React Native | Expo | TypeScript | Redux | React Navigation",
       github: "https://github.com/dainyjose/rn-expo-typescript-bare-template",
@@ -24,7 +24,7 @@ const Portfolio = () => {
       id: 3,
       title: "FCM Push Server",
       description:
-        "A Node.js server setup for sending push notifications to mobile apps using Firebase Cloud Messaging, including topic-based and direct messaging support.",
+        "Developed a push notification server for sending real-time alerts and topic-based notifications to mobile applications using Firebase Cloud Messaging.",
       technologies: "Node.js | Firebase Cloud Messaging | Express.js",
       github: "https://github.com/dainyjose/firebase-cloud-messaging-node",
     },
@@ -32,7 +32,8 @@ const Portfolio = () => {
       id: 4,
       title: "Face Detection App",
       description:
-        "A React Native proof-of-concept app for detecting faces in real-time using camera integration and ML-based detection libraries.",
+        "Built a proof-of-concept mobile app for real-time face detection using camera integration and ML-based processing to explore performance and live detection capabilities on mobile devices.",
+
       technologies: "React Native | Vision Camera | ML Kit | TypeScript",
       github: "https://github.com/dainyjose/face-detection-app",
     },
