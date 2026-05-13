@@ -26,7 +26,7 @@ const Contact = () => {
       (error) => {
         // console.log("Email error:", error.text);
         setMessageStatus("error");
-      }
+      },
     );
   };
 
@@ -39,11 +39,15 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <p>Have a question or want to work together? Send me a message!</p>
+            <p>
+              Have a mobile app idea, production issue, or React Native project
+              that needs support? Send a message and I’ll get back with initial
+              thoughts and possible next steps.
+            </p>
 
             <h5>dainyjose.mary@gmail.com</h5>
             <a href="mailto:dainyjose.mary@gmail.com?subject=Contact%20from%20Portfolio">
-              Send a message...
+              Let’s Talk
             </a>
           </article>
         </div>
