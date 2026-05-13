@@ -46,53 +46,54 @@ const About = () => {
           </div>
           <div className="about__me_content">
             <p>
-              I’m a passionate{" "}
-              <span className="highlight">
-                React Native Mobile Application Developer
-              </span>{" "}
+              I’m a <span className="highlight">React Native Developer</span>{" "}
               with <span className="highlight">3+ years of experience</span>{" "}
-              building scalable cross-platform mobile applications.
+              building scalable mobile applications for startups and businesses.
             </p>
 
             <p>
-              My primary focus is mobile development using{" "}
+              My focus is creating{" "}
               <span className="highlight">
-                React Native, TypeScript, and Redux
-              </span>
-              , creating high-performance applications with clean architecture
-              and maintainable code.
+                fast, reliable, and maintainable
+              </span>{" "}
+              cross-platform apps that provide smooth user experiences across{" "}
+              <span className="highlight">Android and iOS</span>
             </p>
 
             <p>
-              I also work with the <span className="highlight">MERN stack</span>{" "}
-              (MongoDB, Express, React.js, Node.js) to build backend services,
-              APIs, and personal projects.
-            </p>
-            <p>
-              I have experience integrating real-world mobile features such as{" "}
+              I’ve worked on real-world features including{" "}
               <span className="highlight">
-                payments, Google Maps, push notifications, Firebase analytics,
-                Crashlytics, and App Store & Play Store deployments
+                payments, push notifications, Google Maps, analytics,
+                authentication, and App Store deployments
               </span>
               .
             </p>
             <p>
-              I enjoy{" "}
-              <span className="highlight">
-                solving complex problems, improving application performance, and
-                building scalable solutions
-              </span>
-              . Every project is an opportunity to learn, collaborate, and
-              create meaningful digital experiences. 🚀
+              Beyond building features, I enjoy improving{" "}
+              <span className="highlight">app stability</span>, debugging
+              production issues, optimizing{" "}
+              <span className="highlight">performance</span>, and creating
+              solutions that are practical for both users and businesses.
+            </p>
+            <p>
+              I also work with the <span className="highlight">MERN stack</span>{" "}
+              to build APIs, backend services, and full-stack applications when
+              needed.
             </p>
           </div>
-          <a href="#contact" className="btn btn-primary about_contact">
+          <a
+            href="#contact"
+            className="btn btn-primary about_contact"
+          >
             Let's Talk <TbMessageChatbot className="icon" />
           </a>
         </div>
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="me" />
+            <img
+              src={ME}
+              alt="me"
+            />
           </div>
         </div>
       </div>
