@@ -49,7 +49,7 @@ const Blogs = () => {
       link: "https://dev.to/dainyjose/the-life-of-a-react-native-developer-from-code-to-app-store-nnb",
       title: "The Life of a React Native Developer: From Code to App Store",
       description:
-        "This article walks through a React Native developer’s workflow, from writing UI components to handling network, performance, and publication. It shows challenges, best practices, and deployment tips.",
+        "A practical overview of the React Native development workflow — from building UI components to handling APIs, performance optimization, debugging, and App Store deployment.",
       time: "3 min read",
       topic: "Developer Road Map",
       tags: "React Native, Developer Life, Deployment",
@@ -85,14 +85,14 @@ const Blogs = () => {
         "Learn how to implement push notifications in a React Native app using Firebase Cloud Messaging (FCM) and Notifee. This guide covers setting up Firebase, configuring Notifee, handling notifications in foreground/background, and customizing notification appearance.",
       time: "4 min read",
       topic: "FCM Notifications",
-      tags: "react-native, firebase, FCM, notification",
+      tags: "React Native, Firebase, FCM, Notification",
     },
     {
       id: 8,
       link: "https://dev.to/dainyjose/git-complete-commands-cheat-sheet-for-developers-96j",
       title: "Git Complete Commands Cheat Sheet for Developers",
       description:
-        "A well-organized cheat sheet of Git commands developers use daily. From branching to merges, stash to rebase, this covers essential workflows. Good to keep as a quick reference.",
+        "A practical Git command reference covering branching, merging, rebasing, stashing, and other essential workflows developers use daily.",
       time: "2 min read",
       topic: "Git Mastery",
       tags: "Git, Productivity, Tools",
@@ -103,10 +103,20 @@ const Blogs = () => {
       title:
         "15 Must-Have VS Code Extensions for React Native Development (2025)",
       description:
-        "Boost your dev productivity with these VS Code extensions — from linting, formatting, debugging to UI aids. Each extension includes use cases and installation steps.  ",
+        "A curated list of VS Code extensions that improve React Native development productivity, debugging, code quality, formatting, and developer workflow.",
       time: "3 min read",
       topic: "VS Code Productivity",
       tags: "React Native, VS Code, Productivity",
+    },
+    {
+      id: 10,
+      link: "https://dev.to/dainyjose/complete-cicd-guide-for-react-native-apps-using-github-actions-4hh1",
+      title: "Complete CI/CD Guide for React Native Apps Using GitHub Actions",
+      description:
+        "A practical guide to automating React Native builds, testing, and deployment workflows using GitHub Actions. Covers CI/CD setup, build automation, and improving release efficiency for Android and iOS applications.",
+      time: "4 min read",
+      topic: "CI/CD Automation",
+      tags: "React Native, GitHub Actions, CI/CD",
     },
   ];
 
@@ -114,6 +124,10 @@ const Blogs = () => {
     <section id="blogs">
       <h5>My Latest Dev.to Posts</h5>
       <h2>Blogs</h2>
+      <p className="blogs_subtitle">
+        Writing about real-world React Native development challenges, debugging,
+        performance optimization, mobile architecture, and deployment workflows.
+      </p>
       <Swiper
         className="container blogs__container"
         modules={[Pagination]}
@@ -123,20 +137,30 @@ const Blogs = () => {
         autoplay={{ delay: 9000, disableOnInteraction: false }} // auto slide
       >
         {blogs.map((blog) => (
-          <SwiperSlide className="blogs_card" key={blog.id}>
+          <SwiperSlide
+            className="blogs_card"
+            key={blog.id}
+          >
             <span className="blog-topic">{blog.topic}</span>
             <h5 className="blog_title">{blog.title}</h5>
             <p className="blog_description">{blog.description}</p>
             <div className="blog-tags">
               {blog.tags.split(",").map((tag, index) => (
-                <span className="blog-hashtag" key={index}>
+                <span
+                  className="blog-hashtag"
+                  key={index}
+                >
                   #{tag.trim()}
                 </span>
               ))}
             </div>
             <div className="blog-footer">
               <span>⏱{" " + blog.time}</span>
-              <a href={blog.link} target="_blank" rel="noreferrer">
+              <a
+                href={blog.link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Read More →
               </a>
             </div>
