@@ -76,11 +76,11 @@ const About = () => {
             </p>
 
             <p>
-              My focus is creating{" "}
+              My focus is building{" "}
               <span className="highlight">
                 fast, reliable, and maintainable
               </span>{" "}
-              cross-platform apps that provide smooth user experiences across{" "}
+              cross-platform apps that deliver smooth user experiences across{" "}
               <span className="highlight">Android and iOS</span>
             </p>
 

@@ -10,12 +10,12 @@ const Header = () => {
         <h5>Hello I'm</h5>
         <h1>Dainy Jose</h1>
         <h3 className="text-light">
-          React Native Developer Building Scalable Mobile Apps for Real-World
-          Businesses
+          React Native Developer Building Scalable, Production-Ready Mobile Apps
+          for Real Businesses
         </h3>
         <h5 className="text-light header_tech_skill">
-          React Native • TypeScript • Redux • Firebase • Node.js • REST APIs •
-          Payment Integrations • Play Store & App Store Deployment
+          React Native • TypeScript • Redux • Node.js • Firebase • REST APIs •
+          Payments • App Store Deployment
         </h5>
         <HeaderResume />
         <a

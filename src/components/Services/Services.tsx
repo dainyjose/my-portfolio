@@ -6,11 +6,8 @@ import {
   FaServer,
   FaRocket,
 } from "react-icons/fa";
-
 import { MdNotificationsActive, MdPayment, MdApi } from "react-icons/md";
-
 import { SiExpo, SiFirebase } from "react-icons/si";
-
 import { BiSupport } from "react-icons/bi";
 import "./Services.css";
 
@@ -21,28 +18,28 @@ const Services = () => {
       title: "Cross-Platform Mobile Development",
     },
     {
-      icon: <FaCode />,
-      title: "Performance Optimization",
-    },
-    {
-      icon: <MdNotificationsActive />,
-      title: "Push Notifications",
+      icon: <MdApi />,
+      title: "REST API Integration",
     },
     {
       icon: <MdPayment />,
       title: "Payment Integration",
     },
     {
+      icon: <MdNotificationsActive />,
+      title: "Push Notifications",
+    },
+    {
       icon: <FaMapMarkedAlt />,
       title: "Google Maps Features",
     },
     {
-      icon: <FaTools />,
-      title: "Production Bug Fixing",
+      icon: <FaCode />,
+      title: "Performance Optimization",
     },
     {
-      icon: <MdApi />,
-      title: "REST API Integration",
+      icon: <FaTools />,
+      title: "Production Bug Fixing",
     },
     {
       icon: <FaRocket />,
@@ -57,12 +54,12 @@ const Services = () => {
       title: "Backend Development",
     },
     {
-      icon: <BiSupport />,
-      title: "App Maintenance & Support",
-    },
-    {
       icon: <SiFirebase />,
       title: "Firebase Integration",
+    },
+    {
+      icon: <BiSupport />,
+      title: "App Maintenance & Support",
     },
   ];
 

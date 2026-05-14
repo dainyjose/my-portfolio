@@ -40,9 +40,8 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <p>
-              Have a mobile app idea, production issue, or React Native project
-              that needs support? Send a message and I’ll get back with initial
-              thoughts and possible next steps.
+              Have a mobile app idea or production issue? <br /> Let’s discuss
+              how I can help you build or fix it.
             </p>
 
             <h5>dainyjose.mary@gmail.com</h5>
