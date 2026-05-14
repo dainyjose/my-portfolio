@@ -15,7 +15,7 @@ import "./bottomBar.css";
 
 const BottomBar = () => {
   const [activeNav, setActiveNav] = useState("#home");
-
+  const [isFooterVisible, setIsFooterVisible] = useState(false);
   const navItems = [
     { id: "#home", icon: <AiOutlineHome />, label: "Home" },
     { id: "#about", icon: <AiOutlineUser />, label: "About" },
@@ -55,10 +55,26 @@ const BottomBar = () => {
       window.removeEventListener("scroll", onScroll);
     };
   }, []);
-  console.log(window.scrollY);
+  useEffect(() => {
+    const footer = document.querySelector("#footer");
 
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsFooterVisible(entry.isIntersecting);
+      },
+      {
+        threshold: 0.3, // footer 30% visible → hide nav
+      },
+    );
+
+    if (footer) observer.observe(footer);
+
+    return () => {
+      if (footer) observer.unobserve(footer);
+    };
+  }, []);
   return (
-    <nav className="bottom-nav">
+    <nav className={`bottom-nav ${isFooterVisible ? "hide" : ""}`}>
       {navItems.map((item) => (
         <a
           key={item.id}

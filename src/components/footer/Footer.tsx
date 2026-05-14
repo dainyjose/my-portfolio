@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <footer>
+    <footer id="footer">
       <a
         href="#home"
         className="footer__logo"
