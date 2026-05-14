@@ -47,6 +47,10 @@
   min-height: calc(1.5em * 4);
 }
 
+.portfolio__item:hover p {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
 .portfolio__item-content p strong,
 .portfolio__item-content p:last-of-type {
   display: -webkit-box;
