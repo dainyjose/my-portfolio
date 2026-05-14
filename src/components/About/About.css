@@ -1,73 +1,62 @@
 .about__container {
-  display: grid;
-  grid-template-columns: 55% 30%;
-  gap: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.about__me {
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 2rem;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--color-primary),
-    transparent
-  );
-  display: grid;
-  place-items: center;
-  width: 20rem;
-}
-
-.about__me-image {
-  border-radius: 2rem;
-  overflow: hidden;
-  transform: rotate(10deg);
-  transition: var(--transition);
-}
-
-.about__me-image:hover {
-  transform: rotate(0);
-}
+/* =========================
+   TOP CARDS SECTION
+========================= */
 
 .about__cards {
   display: grid;
-  grid-template-columns: repeat(5, 5fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
 .about__card {
   background: var(--color-bg-variant);
   border: 1px solid transparent;
-  border-radius: 60rem;
-  padding: 0.6rem;
+  border-radius: 1rem;
+  padding: 1rem 0.8rem;
   text-align: center;
   transition: var(--transition);
-  margin-bottom: 1rem;
 }
 
 .about__card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
-  cursor: default;
+  transform: translateY(-3px);
 }
 
 .about__icon {
   color: var(--color-primary);
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 
 .about__card h5 {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .about__card small {
-  font-size: 0.4rem;
+  font-size: 0.65rem;
   color: var(--color-light);
-  margin-top: 0.1rem;
 }
 
+/* =========================
+   BOTTOM SECTION (TEXT + IMAGE)
+========================= */
+
+.about__bottom {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* TEXT */
 .about__content {
   display: flex;
   flex-direction: column;
@@ -77,7 +66,7 @@
   font-size: 1.05rem;
   color: var(--color-light);
   text-align: justify;
-  margin: 0.8rem 0 0rem;
+  margin: 0.8rem 0;
 }
 
 .highlight {
@@ -85,66 +74,81 @@
   font-weight: 400;
 }
 
+/* BUTTON */
 .about_contact {
   margin-top: 1rem;
   align-self: flex-end;
 }
 
-@media screen and (max-width: 1024px) {
-  .about__container {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
+/* =========================
+   IMAGE SECTION
+========================= */
 
-  .about__me {
-    width: 50%;
-    margin: 2rem auto 4rem;
-  }
-
-  .about__content p {
-    margin: 1rem 0 1.5rem;
-  }
+.about__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-  .about__me {
-    margin: 0rem auto 3rem;
-    order: -1;
-    background: none;
+.about__me-image {
+  width: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(8deg);
+  transition: var(--transition);
+}
+
+.about__me-image:hover {
+  transform: rotate(0);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 1024px) {
+  .about__cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .about__me_content {
-    order: 0;
+  .about__bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .about__right {
+    margin-top: 2rem;
   }
 
   .about__me-image {
-    transform: rotate(5deg);
-    transition: var(--transition);
-    margin-top: 1rem;
-    border-radius: 20rem;
+    width: 60%;
   }
+}
 
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 600px) {
   .about__cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    order: 1;
-    margin-top: 1rem;
-  }
-
-  .about__content {
-    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
   }
 
   .about__content p {
-    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  .about__right {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+
+  .about__me-image {
+    width: 70%;
   }
 
   .about_contact {
     align-self: center;
-    margin-bottom: 1rem;
-  }
-
-  .learning {
-    display: none;
   }
 }
