@@ -39,15 +39,24 @@ const BottomBar = () => {
           }
         });
       },
-      {
-        threshold: 0.6, // 60% visible = active
-      },
+      { threshold: 0.3 },
     );
 
     sections.forEach((section) => observer.observe(section));
 
-    return () => observer.disconnect();
+    const onScroll = () => {
+      if (window.scrollY < 80) setActiveNav("#home");
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
+  console.log(window.scrollY);
+
   return (
     <nav className="bottom-nav">
       {navItems.map((item) => (
