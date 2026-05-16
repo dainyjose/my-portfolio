@@ -7,7 +7,9 @@ import ExtraInfo from "./components/ExtraInfo/ExtraInfo";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Services from "./components/Services/Services";
 import TechSkills from "./components/TechSkills/TechSkills";
+import Work from "./components/Work/Work";
 
 const App = () => {
   return (
@@ -16,8 +18,10 @@ const App = () => {
       <BottomBar />
       <About />
       <TechSkills />
+      <Services />
       <Portfolio />
       <Experience />
+      <Work />
       <Blogs />
       <ExtraInfo />
       <Contact />

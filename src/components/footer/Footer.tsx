@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <footer>
+    <footer id="footer">
       <a
         href="#home"
         className="footer__logo"
@@ -24,13 +24,19 @@ const Footer = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#tech_skill">Tech Skills</a>
+          <a href="#tech_skill"> Skills</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#services"> Services</a>
+        </li>
+        <li>
+          <a href="#portfolio">Work</a>
         </li>
         <li>
           <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#work">Approach</a>
         </li>
         <li>
           <a href="#blogs">Blogs</a>
