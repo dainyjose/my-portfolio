@@ -56,3 +56,48 @@
   line-height: 1.4;
   color: var(--color-white);
 }
+/* ================= TABLET ================= */
+
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+  }
+
+  .service__card {
+    min-height: 130px;
+    padding: 1rem 0.7rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0.7rem;
+  }
+
+  .service__card {
+    min-height: 115px;
+
+    padding: 0.9rem 0.5rem;
+
+    border-radius: 0.8rem;
+  }
+
+  .service__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    font-size: 1rem;
+
+    margin-bottom: 0.6rem;
+  }
+
+  .service__card h3 {
+    font-size: 0.72rem;
+    line-height: 1.3;
+  }
+}
