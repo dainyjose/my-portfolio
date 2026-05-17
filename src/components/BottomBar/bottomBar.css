@@ -3,7 +3,7 @@ nav {
   width: max-content;
   display: flex;
   padding: 0.7rem 1.7rem;
-  z-index: 2;
+  z-index: 9999;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -59,7 +59,7 @@ nav.bottom-nav {
   width: max-content;
   display: flex;
   padding: 0.7rem 1.7rem;
-  z-index: 2;
+  z-index: 9999;
   position: fixed;
   left: 50%;
   transform: translateX(-50%) translateY(0);
@@ -67,30 +67,58 @@ nav.bottom-nav {
   gap: 0.8rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
-
   opacity: 1;
   transition:
     transform 0.3s ease,
     opacity 0.3s ease;
 }
-
-nav.bottom-nav.hide {
-  transform: translateX(-50%) translateY(120%);
-  opacity: 0;
-  pointer-events: none;
+@media screen and (min-width: 601px) {
+  nav.bottom-nav.hide {
+    transform: translateX(-50%) translateY(120%);
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 @media screen and (max-width: 600px) {
-  nav {
-    gap: 0.5rem;
-    padding: 0.5rem 1.5rem;
+  nav.bottom-nav {
+    width: calc(100% - 1rem);
+    left: 50%;
+    bottom: 1rem;
+
+    transform: translateX(-50%) translateY(0);
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0.05rem;
+    gap: 0.005rem;
+
+    border-radius: 1rem;
+
+    scrollbar-width: none;
+  }
+
+  nav.bottom-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav.bottom-nav.hide {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   nav a {
-    padding: 0.5rem;
+    min-width: 2.3rem;
+    min-height: 2.3rem;
+    padding: 0.55rem;
+    font-size: 1rem;
+    flex-shrink: 0;
   }
 
   nav a .nav-text {
-    font-size: 0.65rem;
-    bottom: -1.5rem;
+    display: none;
   }
 }
