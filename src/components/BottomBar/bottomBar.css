@@ -67,7 +67,6 @@ nav.bottom-nav {
   gap: 0.8rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
-
   opacity: 1;
   transition:
     transform 0.3s ease,
@@ -80,17 +79,38 @@ nav.bottom-nav.hide {
   pointer-events: none;
 }
 @media screen and (max-width: 600px) {
-  nav {
-    gap: 0.5rem;
-    padding: 0.5rem 1.5rem;
+  nav.bottom-nav {
+    width: calc(100% - 1rem);
+    left: 0.15rem;
+    right: 0.5rem;
+    bottom: 1rem;
+    transform: translateY(0);
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.2rem;
+    gap: 0.2rem;
+    border-radius: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  nav.bottom-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav.bottom-nav.hide {
+    transform: translateY(120%);
   }
 
   nav a {
+    min-width: 0.5rem;
+    min-height: 0.5rem;
     padding: 0.5rem;
+    font-size: 1rem;
+    flex-shrink: 0;
   }
 
   nav a .nav-text {
-    font-size: 0.65rem;
-    bottom: -1.5rem;
+    display: none;
   }
 }
