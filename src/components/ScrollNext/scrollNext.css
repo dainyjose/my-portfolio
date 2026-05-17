@@ -1,0 +1,60 @@
+.scroll__next {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+
+  width: 3rem;
+  height: 3rem;
+
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  color: var(--color-white);
+  cursor: pointer;
+
+  z-index: 1000;
+
+  transition: var(--transition);
+
+  animation: bounce 2s infinite;
+}
+.scroll__next.footer-active {
+  background: #000;
+  color: #fff;
+}
+.scroll__next:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.scroll__icon {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll__next {
+    right: 1rem;
+    bottom: 6rem;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+}
