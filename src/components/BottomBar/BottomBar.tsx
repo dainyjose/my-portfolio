@@ -28,42 +28,105 @@ const BottomBar = () => {
     { id: "#extra-info", icon: <MdInfoOutline />, label: "More" },
     { id: "#contact", icon: <SiChatbot />, label: "Contact" },
   ];
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY + window.innerHeight / 3;
+  //     console.log(scrollPosition, window.scrollY);
+
+  //     navItems.forEach((item) => {
+  //       const section = document.querySelector(item.id) as HTMLElement | null;
+
+  //       if (!section) return;
+
+  //       const sectionTop = section.offsetTop;
+  //       const sectionHeight = section.offsetHeight;
+  //       console.log(sectionTop, sectionHeight);
+
+  //       if (
+  //         scrollPosition >= sectionTop &&
+  //         scrollPosition < sectionTop + sectionHeight
+  //       ) {
+  //         setActiveNav(item.id);
+  //       }
+  //     });
+
+  //     if (window.scrollY < 100) {
+  //       setActiveNav("#home");
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   handleScroll();
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
+    const handleScroll = () => {
+      // HOME
+      if (window.scrollY <= 10) {
+        setActiveNav("#home");
+        return;
+      }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveNav(`#${entry.target.id}`);
-          }
-        });
-      },
-      { threshold: 0.3 },
-    );
+      const scrollPosition = window.scrollY + window.innerHeight * 0.45;
 
-    sections.forEach((section) => observer.observe(section));
+      let currentSection = "#home";
 
-    const onScroll = () => {
-      if (window.scrollY < 80) setActiveNav("#home");
+      for (const item of navItems) {
+        const section = document.querySelector(item.id) as HTMLElement | null;
+
+        if (!section) continue;
+
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          currentSection = item.id;
+          break;
+        }
+      }
+
+      setActiveNav(currentSection);
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
 
     return () => {
-      observer.disconnect();
-      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   useEffect(() => {
     const footer = document.querySelector("#footer");
 
     const observer = new IntersectionObserver(
       ([entry]) => {
+        // Mobile → never hide
+        if (window.innerWidth <= 600) {
+          setIsFooterVisible(false);
+          return;
+        }
+
+        // Top reached
+        if (window.scrollY <= 50) {
+          setIsFooterVisible(false);
+          return;
+        }
+
         setIsFooterVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.3, // footer 30% visible → hide nav
+        threshold: 0.2,
       },
     );
 
@@ -73,8 +136,14 @@ const BottomBar = () => {
       if (footer) observer.unobserve(footer);
     };
   }, []);
+
   return (
-    <nav className={`bottom-nav ${isFooterVisible ? "hide" : ""}`}>
+    // <nav className={`bottom-nav ${isFooterVisible ? "hide" : ""}`}>
+    <nav
+      className={`bottom-nav ${
+        isFooterVisible && window.innerWidth > 600 ? "hide" : ""
+      }`}
+    >
       {navItems.map((item) => (
         <a
           key={item.id}
