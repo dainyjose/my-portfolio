@@ -7,6 +7,7 @@ import ExtraInfo from "./components/ExtraInfo/ExtraInfo";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Portfolio from "./components/Portfolio/Portfolio";
+import ScrollNext from "./components/ScrollNext/ScrollNext";
 import Services from "./components/Services/Services";
 import TechSkills from "./components/TechSkills/TechSkills";
 import Work from "./components/Work/Work";
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <>
       <Header />
+      <ScrollNext />
       <BottomBar />
       <About />
       <TechSkills />
