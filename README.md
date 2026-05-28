@@ -106,10 +106,11 @@ bun run deploy
 [GitHub](https://github.com/dainyjose) | [LinkedIn](https://linkedin.com/in/dainyjose)
 
 ---
+
 ## License
 
-This project is licensed under the MIT License.
+© 2026 Dainy Jose. All rights reserved.
 
-© 2026 Dainy Jose. Designed and developed by Dainy Jose.
+⚠️ This repository is shared for portfolio and reference purposes only.
 
-If you use or modify this portfolio, please provide proper attribution.
+Unauthorized copying, modification, redistribution, or commercial use of this project or its source code is prohibited without explicit permission from the author.
