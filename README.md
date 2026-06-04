@@ -47,58 +47,6 @@ Check it out: [https://dainyjose.github.io/my-portfolio/](https://dainyjose.gith
 
 ---
 
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/dainyjose/my-portfolio.git
-cd my-portfolio
-```
-
-Install dependencies:
-
-```bash
-  bun install
-```
-
----
-
-## Usage
-
-Run the development server:
-
-```bash
-  bun run dev
-```
-
-Open in browser:
-
-```bash
-http://localhost:5173/
-```
-
-Build for production:
-
-```bash
-bun run build
-```
-
-Preview production build locally:
-
-```bash
-bun run preview
-```
-
----
-
-## Deployment
-
-To deploy on GitHub Pages:
-
-```bash
-bun run deploy
-```
 
 ## 🧑‍💻 Author
 
@@ -111,6 +59,8 @@ bun run deploy
 
 © 2026 Dainy Jose. All rights reserved.
 
-⚠️ This repository is shared for portfolio and reference purposes only.
+This portfolio, including its source code, design, content, images, resume, personal branding assets, and associated materials, is provided for viewing and reference purposes only.
 
-Unauthorized copying, modification, redistribution, or commercial use of this project or its source code is prohibited without explicit permission from the author.
+No permission is granted to copy, modify, redistribute, republish, host, deploy, sublicense, or create derivative works from this project without prior written permission from the author.
+
+Unauthorized use of any part of this repository may result in copyright enforcement actions.
