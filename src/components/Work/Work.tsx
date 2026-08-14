@@ -7,34 +7,35 @@ const Work = () => {
 
       <div className="container work__container">
         <article className="work__item">
-          <h3>Clear Communication</h3>
+          <h3>Technical Ownership</h3>
           <p>
-            I believe in transparent communication, regular updates, and
-            collaborative development throughout the project lifecycle.
+            I take ownership of features from requirement analysis and technical planning through
+            implementation, testing, deployment, and production support.
           </p>
         </article>
 
         <article className="work__item">
           <h3>Scalable Solutions</h3>
           <p>
-            I focus on building maintainable and scalable applications with
-            clean architecture and performance-oriented development practices.
+            I focus on clean architecture, maintainable code, reusable components, and
+            performance-oriented solutions that can evolve with business needs.
           </p>
         </article>
 
         <article className="work__item">
-          <h3>Production-Focused Development</h3>
+          <h3>Production-First Mindset</h3>
           <p>
-            From debugging and optimization to deployment and monitoring, I
-            prioritize stable and reliable production-ready applications.
+            I prioritize stability and reliability by considering edge cases, error handling,
+            performance, debugging, monitoring, and release readiness throughout development.
           </p>
         </article>
 
         <article className="work__item">
-          <h3>Continuous Learning</h3>
+          <h3>Mentoring & Collaboration</h3>
           <p>
-            I continuously explore modern tools, workflows, and best practices
-            to improve development efficiency and application quality.
+            I collaborate closely with backend, QA, and UI/UX teams while mentoring junior
+            developers through code reviews, technical discussions, debugging, and practical project
+            guidance.
           </p>
         </article>
       </div>
