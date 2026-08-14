@@ -45,6 +45,13 @@
   align-items: flex-end;
 }
 
+.promotion {
+  color: var(--color-light);
+  font-size: 0.6rem;
+  margin-bottom: 0.8rem;
+  align-items: flex-end;
+}
+
 .experience-item ul {
   list-style-type: disc;
   padding-left: 0.6rem;
@@ -61,7 +68,7 @@
 
 .technologies {
   font-style: italic;
-  color: var(--color-primary);
+  color: var(--color-light);
   font-size: 0.89rem;
 }
 
