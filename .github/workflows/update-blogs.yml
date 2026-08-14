@@ -1,0 +1,45 @@
+name: Update Dev.to Blogs
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  update-blogs:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest DEV.to blogs
+        run: node scripts/fetchBlogs.mjs
+
+      - name: Commit updated blogs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add src/data/blogs.json
+
+          if git diff --cached --quiet; then
+            echo "No blog changes"
+            exit 0
+          fi
+
+          commit_user_name: dainyjose
+          commit_user_email: dainyjose.mary@gmail.com
+          commit_message: "docs: update latest DEV.to articles"
+          git push origin master
