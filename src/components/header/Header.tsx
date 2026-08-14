@@ -6,19 +6,19 @@ import "./header.css";
 import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
-  const texts = [
-    "React Native Developer",
-    "TypeScript | Redux Expert",
-    "Building Production Apps",
-  ];
-  const [index, setIndex] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % texts.length);
-    }, 2000);
+  // const texts = [
+  //   "React Native Developer",
+  //   "TypeScript | Redux Expert",
+  //   "Building Production Apps",
+  // ];
+  // const [index, setIndex] = useState(0);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIndex((prev) => (prev + 1) % texts.length);
+  //   }, 2000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <header id="home">
@@ -31,16 +31,18 @@ const Header = () => {
           for Real Businesses */}
           <TypeAnimation
             sequence={[
-              "React Native Developer",
-              2000,
-              "Building Scalable Mobile Apps",
-              2000,
-              "TypeScript • Redux • Firebase Expert",
-              2000,
-              "Backend + Mobile Developer",
-              2000,
-              "Production-Ready App Builder",
-              2000,
+              "Senior Software Developer",
+              2200,
+              "Building Scalable Mobile Applications",
+              2200,
+              "Mobile Architecture & Technical Ownership",
+              2200,
+              "React Native • TypeScript • Node.js",
+              2200,
+              "Mentoring & Growing Junior Developers",
+              2200,
+              "Building Production-Ready Software",
+              2200,
             ]}
             speed={10}
             deletionSpeed={30}
@@ -48,14 +50,11 @@ const Header = () => {
           />
         </h3>
         <h5 className="text-light header_tech_skill">
-          React Native • TypeScript • Redux • Node.js • Firebase • REST APIs •
-          Payments • App Store Deployment
+          React Native • TypeScript • Redux • Node.js • Firebase • REST APIs • Payments • App Store
+          Deployment
         </h5>
         <HeaderResume />
-        <a
-          href="#contact"
-          className="scroll__down"
-        >
+        <a href="#contact" className="scroll__down">
           Scroll Down.......
           <TbArrowBigRightLines />
         </a>

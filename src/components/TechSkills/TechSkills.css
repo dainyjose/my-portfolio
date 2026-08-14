@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  max-width: 110rem;
+  max-width: 50rem;
   margin: 1rem auto;
   padding-bottom: 50px;
 }
@@ -19,7 +19,9 @@
 .tech-icons {
   position: relative;
   font-size: 2rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
   color: var(--color-primary);
   cursor: pointer;
   border: 1px solid transparent;
@@ -49,7 +51,9 @@
   border-radius: 1px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
   white-space: nowrap;
 }
 

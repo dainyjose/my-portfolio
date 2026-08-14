@@ -1,13 +1,12 @@
+import { FaMobileAlt, FaCode, FaTools, FaServer, FaRocket, FaBug } from "react-icons/fa";
 import {
-  FaMobileAlt,
-  FaCode,
-  FaMapMarkedAlt,
-  FaTools,
-  FaServer,
-  FaRocket,
-} from "react-icons/fa";
-import { MdNotificationsActive, MdPayment, MdApi } from "react-icons/md";
-import { SiExpo, SiFirebase } from "react-icons/si";
+  MdNotificationsActive,
+  MdPayment,
+  MdApi,
+  MdSecurity,
+  MdArchitecture,
+} from "react-icons/md";
+
 import { BiSupport } from "react-icons/bi";
 import "./Services.css";
 
@@ -15,51 +14,51 @@ const Services = () => {
   const services = [
     {
       icon: <FaMobileAlt />,
-      title: "Cross-Platform Mobile Development",
+      title: "Mobile Application Development",
+    },
+    {
+      icon: <MdArchitecture />,
+      title: "Application Architecture",
     },
     {
       icon: <MdApi />,
-      title: "REST API Integration",
-    },
-    {
-      icon: <MdPayment />,
-      title: "Payment Integration",
-    },
-    {
-      icon: <MdNotificationsActive />,
-      title: "Push Notifications",
-    },
-    {
-      icon: <FaMapMarkedAlt />,
-      title: "Google Maps Features",
-    },
-    {
-      icon: <FaCode />,
-      title: "Performance Optimization",
-    },
-    {
-      icon: <FaTools />,
-      title: "Production Bug Fixing",
-    },
-    {
-      icon: <FaRocket />,
-      title: "Play Store & App Store Deployment",
-    },
-    {
-      icon: <SiExpo />,
-      title: "Expo Bare Workflow",
+      title: "API Integration & Development",
     },
     {
       icon: <FaServer />,
       title: "Backend Development",
     },
     {
-      icon: <SiFirebase />,
-      title: "Firebase Integration",
+      icon: <MdPayment />,
+      title: "Payment Integration",
+    },
+    {
+      icon: <MdSecurity />,
+      title: "Authentication & Security",
+    },
+    {
+      icon: <MdNotificationsActive />,
+      title: "Push Notifications & Messaging",
+    },
+    {
+      icon: <FaRocket />,
+      title: "Performance Optimization",
+    },
+    {
+      icon: <FaBug />,
+      title: "Production Debugging & Stability",
+    },
+    {
+      icon: <FaTools />,
+      title: "App Release & Deployment",
     },
     {
       icon: <BiSupport />,
       title: "App Maintenance & Support",
+    },
+    {
+      icon: <FaCode />,
+      title: "Developer Mentoring & Code Review",
     },
   ];
 
@@ -70,10 +69,7 @@ const Services = () => {
 
       <div className="container services__container">
         {services.map((service, index) => (
-          <article
-            className="service__card"
-            key={index}
-          >
+          <article className="service__card" key={index}>
             <div className="service__icon">{service.icon}</div>
 
             <h3>{service.title}</h3>

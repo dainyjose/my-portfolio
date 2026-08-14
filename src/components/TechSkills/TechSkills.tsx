@@ -1,47 +1,22 @@
-import {
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiJavascript1,
-  DiGit,
-} from "react-icons/di";
+import { DiReact, DiNodejs, DiJavascript1, DiGit } from "react-icons/di";
 import {
   SiTypescript,
   SiRedux,
   SiExpress,
   SiMysql,
-  SiPython,
   SiFirebase,
-  SiCloudinary,
   SiExpo,
-  SiVite,
-  SiHtml5,
-  SiCss3,
   SiPostman,
   SiBitbucket,
   SiFigma,
-  SiHeroku,
   SiNetlify,
-  SiCloudflare,
-  SiCpanel,
-  SiJest,
-  SiDocker,
-  SiMacos,
   SiJira,
-  SiXampp,
   SiAndroidstudio,
   SiXcode,
-  SiNpm,
-  SiBun,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import {
-  FaAndroid,
-  FaApple,
-  FaGooglePlay,
-  FaAppStoreIos,
-} from "react-icons/fa";
-import { ImWindows } from "react-icons/im";
+import { FaAndroid, FaApple, FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
+
 import "./TechSkills.css";
 
 const TechSkills = () => {
@@ -57,14 +32,9 @@ const TechSkills = () => {
     { icon: <DiNodejs />, name: "Node.js" },
     { icon: <SiExpress />, name: "Express.js" },
     { icon: <SiFirebase />, name: "Firebase" },
-    { icon: <SiCloudinary />, name: "Cloudinary" },
 
     // 🔹 Database
-    { icon: <DiMongodb />, name: "MongoDB" },
     { icon: <SiMysql />, name: "MySQL / SQL" },
-
-    // 🔹 Testing
-    { icon: <SiJest />, name: "Jest" },
 
     // 🔹 Development Tools
     { icon: <DiGit />, name: "Git / Git Bash" },
@@ -75,19 +45,13 @@ const TechSkills = () => {
     { icon: <SiXcode />, name: "Xcode" },
     { icon: <SiJira />, name: "Jira" },
     { icon: <SiFigma />, name: "Figma" },
-    { icon: <SiNpm />, name: "npm" },
 
     // 🔹 Deployment & Hosting
-    { icon: <SiHeroku />, name: "Heroku" },
     { icon: <SiNetlify />, name: "Netlify" },
-    { icon: <SiCloudflare />, name: "Cloudflare" },
-    { icon: <SiCpanel />, name: "cPanel" },
 
     // 🔹 Platforms
     { icon: <FaAndroid />, name: "Android" },
     { icon: <FaApple />, name: "iOS" },
-    { icon: <ImWindows />, name: "Windows" },
-    { icon: <SiMacos />, name: "macOS" },
 
     // 🔹 App Publishing
     { icon: <FaGooglePlay />, name: "Google Play Console" },

@@ -8,125 +8,18 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./Blogs.css";
+import blogs from "../../data/blogs.json";
 
 const Blogs = () => {
   SwiperCore.use([Pagination, Autoplay]);
-
-  const blogs = [
-    {
-      id: 1,
-      link: "https://dev.to/dainyjose/edge-to-edge-styling-in-react-native-on-android-15-2ihd",
-      title: "Edge-to-Edge Styling in React Native on Android 15",
-      description:
-        "Google’s Android 15 pushes developers toward edge-to-edge design, requiring apps to extend content behind status and navigation bars. In React Native, default layout padding may cause unwanted spacing. This guide shows how to enable immersive layouts, style system bars, and apply quick fixes. ",
-      time: "3 min read",
-      topic: "Edge-to-Edge UI",
-      tags: "React Native, Android, UI",
-    },
-    {
-      id: 2,
-      link: "https://dev.to/dainyjose/understanding-google-plays-16-kb-page-size-requirement-for-android-apps-phd",
-      title:
-        "Understanding Google Play’s 16 KB Page Size Requirement for Android Apps",
-      description:
-        "Starting with Android 15, apps must support 16 KB page sizes for Google Play compliance. This article explains the “what” and “why” behind the requirement. It also walks through ways to test and fix builds that don’t meet this new criterion.",
-      time: "3 min read",
-      topic: "App Size Compliance",
-      tags: "Android, Performance, Mobile",
-    },
-    {
-      id: 3,
-      link: "https://dev.to/dainyjose/troubleshooting-16-kb-page-size-issues-2pfe",
-      title: "Troubleshooting 16 KB Page Size Issues",
-      description:
-        "If your app fails the 16 KB page size requirement, this post helps you debug and resolve it. It covers updating Gradle, NDK settings, and target SDK adjustments. Best practices are shared to prevent rejections on Google Play.",
-      time: "2 min read",
-      topic: "Android Debugging",
-      tags: "Android, Debugging, Mobile",
-    },
-    {
-      id: 4,
-      link: "https://dev.to/dainyjose/the-life-of-a-react-native-developer-from-code-to-app-store-nnb",
-      title: "The Life of a React Native Developer: From Code to App Store",
-      description:
-        "A practical overview of the React Native development workflow — from building UI components to handling APIs, performance optimization, debugging, and App Store deployment.",
-      time: "3 min read",
-      topic: "Developer Road Map",
-      tags: "React Native, Developer Life, Deployment",
-    },
-    {
-      id: 5,
-      link: "https://dev.to/dainyjose/setting-up-react-native-expo-bare-typescript-development-environment-on-macos-38hi",
-      title:
-        "Setting Up React Native (Expo Bare + TypeScript) Development Environment on macOS",
-      description:
-        "Set up a React Native project using Expo’s bare workflow and TypeScript on macOS. The post guides through installing Node, JDK, Xcode, Pod setup, and essential dev tools. By the end, your environment is ready for mobile development.",
-      time: "2 min read",
-      topic: "Development Setup",
-      tags: "React Native, Expo, TypeScript",
-    },
-    {
-      id: 6,
-      link: "https://dev.to/dainyjose/razorpay-integration-in-react-native-with-nodejs-webhooks-and-mongodb-12dd",
-      title:
-        "Razorpay Integration in React Native with Node.js Webhooks and MongoDB",
-      description:
-        "Step-by-step guide to integrate Razorpay payments into a React Native app using Node.js backend. Covers order creation, webhook verification, and storing transaction data in MongoDB. Ideal for mobile apps needing secure payment flow.",
-      time: "3 min read",
-      topic: "Payment Integration",
-      tags: "React Native, Node.js, Payments",
-    },
-    {
-      id: 7,
-      link: "https://dev.to/dainyjose/implementing-push-notifications-in-react-native-using-firebase-and-notifee-ahl",
-      title:
-        "Implementing Push Notifications in React Native Using Firebase and Notifee",
-      description:
-        "Learn how to implement push notifications in a React Native app using Firebase Cloud Messaging (FCM) and Notifee. This guide covers setting up Firebase, configuring Notifee, handling notifications in foreground/background, and customizing notification appearance.",
-      time: "4 min read",
-      topic: "FCM Notifications",
-      tags: "React Native, Firebase, FCM, Notification",
-    },
-    {
-      id: 8,
-      link: "https://dev.to/dainyjose/git-complete-commands-cheat-sheet-for-developers-96j",
-      title: "Git Complete Commands Cheat Sheet for Developers",
-      description:
-        "A practical Git command reference covering branching, merging, rebasing, stashing, and other essential workflows developers use daily.",
-      time: "2 min read",
-      topic: "Git Mastery",
-      tags: "Git, Productivity, Tools",
-    },
-    {
-      id: 9,
-      link: "https://dev.to/dainyjose/15-must-have-vs-code-extensions-for-react-native-development-2025-5g37",
-      title:
-        "15 Must-Have VS Code Extensions for React Native Development (2025)",
-      description:
-        "A curated list of VS Code extensions that improve React Native development productivity, debugging, code quality, formatting, and developer workflow.",
-      time: "3 min read",
-      topic: "VS Code Productivity",
-      tags: "React Native, VS Code, Productivity",
-    },
-    {
-      id: 10,
-      link: "https://dev.to/dainyjose/complete-cicd-guide-for-react-native-apps-using-github-actions-4hh1",
-      title: "Complete CI/CD Guide for React Native Apps Using GitHub Actions",
-      description:
-        "A practical guide to automating React Native builds, testing, and deployment workflows using GitHub Actions. Covers CI/CD setup, build automation, and improving release efficiency for Android and iOS applications.",
-      time: "4 min read",
-      topic: "CI/CD Automation",
-      tags: "React Native, GitHub Actions, CI/CD",
-    },
-  ];
 
   return (
     <section id="blogs">
       <h5>My Latest Dev.to Posts</h5>
       <h2>Blogs</h2>
       <p className="blogs_subtitle">
-        Writing about real-world React Native development challenges, debugging,
-        performance optimization, mobile architecture, and deployment workflows.
+        Writing about real-world React Native development challenges, debugging, performance
+        optimization, mobile architecture, and deployment workflows.
       </p>
       <Swiper
         className="container blogs__container"
@@ -136,31 +29,21 @@ const Blogs = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 9000, disableOnInteraction: false }} // auto slide
       >
-        {blogs.map((blog) => (
-          <SwiperSlide
-            className="blogs_card"
-            key={blog.id}
-          >
+        {blogs.slice(0, 15).map(blog => (
+          <SwiperSlide className="blogs_card" key={blog.id}>
             <span className="blog-topic">{blog.topic}</span>
             <h5 className="blog_title">{blog.title}</h5>
             <p className="blog_description">{blog.description}</p>
             <div className="blog-tags">
-              {blog.tags.split(",").map((tag, index) => (
-                <span
-                  className="blog-hashtag"
-                  key={index}
-                >
+              {blog.tags.map((tag, index) => (
+                <span className="blog-hashtag" key={index}>
                   #{tag.trim()}
                 </span>
               ))}
             </div>
             <div className="blog-footer">
               <span>⏱{" " + blog.time}</span>
-              <a
-                href={blog.link}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={blog.link} target="_blank" rel="noreferrer">
                 Read More →
               </a>
             </div>

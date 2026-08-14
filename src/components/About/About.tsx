@@ -1,12 +1,7 @@
 import ME from "../../assets/dainy_jose.jpg";
 import { FaAward } from "react-icons/fa";
 import { TbMessageChatbot } from "react-icons/tb";
-import {
-  MdCloudUpload,
-  MdOutlineMilitaryTech,
-  MdPayment,
-  MdSync,
-} from "react-icons/md";
+import { MdCloudUpload, MdOutlineMilitaryTech, MdPayment, MdSync } from "react-icons/md";
 import { VscRepoClone } from "react-icons/vsc";
 import { LiaDev } from "react-icons/lia";
 import { GrTechnology } from "react-icons/gr";
@@ -20,105 +15,100 @@ const About = () => {
       <div className="container about__container">
         <div className="about__cards">
           <article className="about__card">
-            <FaAward className="about__icon" />
-            <h5>Experience</h5>
-            <small>3+ years</small>
+            <VscRepoClone className="about__icon" />
+            <h5>Production Experience</h5>
+            <small>3+ Years</small>
           </article>
 
-          <article className="about__card">
-            <VscRepoClone className="about__icon" />
-            <h5>Projects & POCs</h5>
-            <small>20+ Projects</small>
-          </article>
           <article className="about__card">
             <LiaDev className="about__icon" />
-            <h5>Dev Blogs</h5>
-            <small>15+ Blogs</small>
+            <h5>Technical Ownership</h5>
+            <small>Features & Releases</small>
           </article>
 
-          <article className="about__card learning">
+          <article className="about__card">
             <GrTechnology className="about__icon" />
-            <h5>Learning Now</h5>
-            <small>MERN & Redux</small>
+            <h5>Full-Stack</h5>
+            <small>Mobile + Backend</small>
           </article>
 
           <article className="about__card">
             <MdOutlineMilitaryTech className="about__icon" />
-            <h5>Tech Stack</h5>
-            <small>25+ Tools</small>
+            <h5>Architecture</h5>
+            <small>Scalable Applications</small>
           </article>
 
           <article className="about__card">
             <MdCloudUpload className="about__icon" />
-            <h5>Deployment</h5>
+            <h5>App Releases</h5>
             <small>Android & iOS</small>
           </article>
 
           <article className="about__card">
             <MdPayment className="about__icon" />
-            <h5>Payments</h5>
-            <small>Razorpay & PayU</small>
+            <h5>Integrations</h5>
+            <small>Payments & APIs</small>
           </article>
 
           <article className="about__card">
             <MdSync className="about__icon" />
-            <h5>Real-Time Apps</h5>
-            <small>Socket & Firebase</small>
+            <h5>Team Growth</h5>
+            <small>Mentoring Developers</small>
+          </article>
+
+          <article className="about__card">
+            <FaAward className="about__icon" />
+            <h5>Code Quality</h5>
+            <small>Reviews & Best Practices</small>
           </article>
         </div>
 
         <div className="about__bottom">
           <div className="about__content">
             <p>
-              I’m a <span className="highlight">React Native Developer</span>{" "}
-              with <span className="highlight">3+ years of experience</span>{" "}
-              building scalable mobile applications for startups and businesses.
+              I’m a <span className="highlight">Senior Software Developer</span> with{" "}
+              <span className="highlight">3+ years of experience</span> building and maintaining
+              production-ready software, with a strong focus on cross-platform mobile applications.
             </p>
 
             <p>
-              My focus is building{" "}
-              <span className="highlight">
-                fast, reliable, and maintainable
-              </span>{" "}
-              cross-platform apps that deliver smooth user experiences across{" "}
-              <span className="highlight">Android and iOS</span>
+              My primary expertise is{" "}
+              <span className="highlight">React Native, TypeScript, and modern JavaScript</span>,
+              with hands-on experience across application architecture, state management, API
+              integration, authentication, payments, notifications, analytics, and Android/iOS
+              releases.
             </p>
 
             <p>
-              I’ve worked on real-world features including{" "}
+              I take ownership of features from{" "}
               <span className="highlight">
-                payments, push notifications, Google Maps, analytics,
-                authentication, and App Store deployments
+                requirements and technical planning through development, testing, debugging, and
+                production release
               </span>
-              .
-            </p>
-            <p>
-              Beyond building features, I enjoy improving{" "}
-              <span className="highlight">app stability</span>, debugging
-              production issues, optimizing{" "}
-              <span className="highlight">performance</span>, and creating
-              solutions that are practical for both users and businesses.
-            </p>
-            <p>
-              I also work with the <span className="highlight">MERN stack</span>{" "}
-              to build APIs, backend services, and full-stack applications when
-              needed.
+              . I enjoy solving complex problems and building solutions that are scalable,
+              maintainable, and practical for both users and businesses.
             </p>
 
-            <a
-              href="#contact"
-              className="btn btn-primary about_contact"
-            >
+            <p>
+              Beyond mobile development, I work with{" "}
+              <span className="highlight">Node.js, REST APIs, SQL, and backend services</span> to
+              understand and contribute to the complete application lifecycle.
+            </p>
+
+            <p>
+              I also enjoy <span className="highlight">mentoring junior developers</span>, sharing
+              technical knowledge, reviewing code, and helping developers grow from learning
+              concepts to independently solving real-world engineering problems.
+            </p>
+
+            <a href="#contact" className="btn btn-primary about_contact">
               Let's Talk <TbMessageChatbot className="icon" />
             </a>
           </div>
 
           <div className="about__right">
             <div className="about__me-image">
-              <img
-                src={ME}
-                alt="me"
-              />
+              <img src={ME} alt="me" />
             </div>
           </div>
         </div>
