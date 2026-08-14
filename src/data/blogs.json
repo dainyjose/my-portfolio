@@ -1,0 +1,388 @@
+[
+  {
+    "id": 4254511,
+    "link": "https://dev.to/dainyjose/google-play-requires-android-16-api-level-36-by-august-31-2026-react-native-migration-guide-1d51",
+    "title": "Google Play Requires Android 16 (API Level 36) by August 31, 2026 — React Native Migration Guide",
+    "description": "Google Play has announced that starting August 31, 2026, all new apps and app updates must target...",
+    "time": "6 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "android",
+      "development",
+      "mobile"
+    ],
+    "publishedAt": "2026-07-28T17:10:01Z"
+  },
+  {
+    "id": 4232322,
+    "link": "https://dev.to/dainyjose/from-learning-to-implementation-my-journey-with-firebase-analytics-ga4-1hjg",
+    "title": "From Learning to Implementation: My Journey with Firebase Analytics & GA4",
+    "description": "Over the past few weeks, I've been focused on deepening my understanding of mobile analytics—not just...",
+    "time": "2 min read",
+    "topic": "career",
+    "tags": [
+      "career",
+      "reactnative",
+      "firebase",
+      "ga4"
+    ],
+    "publishedAt": "2026-07-27T03:51:36Z"
+  },
+  {
+    "id": 4232277,
+    "link": "https://dev.to/dainyjose/mastering-ga4-for-mobile-apps-from-events-to-business-insights-3n5l",
+    "title": "Mastering GA4 for Mobile Apps — From Events to Business Insights",
+    "description": "Integrating Firebase Analytics is an excellent first step toward understanding how users interact...",
+    "time": "5 min read",
+    "topic": "ga4",
+    "tags": [
+      "ga4",
+      "firebase",
+      "reactnative",
+      "analytics"
+    ],
+    "publishedAt": "2026-07-26T17:29:12Z"
+  },
+  {
+    "id": 4232140,
+    "link": "https://dev.to/dainyjose/firebase-analytics-in-react-native-complete-implementation-guide-4ec4",
+    "title": "Firebase Analytics in React Native — Complete Implementation Guide",
+    "description": "Analytics is one of the most valuable tools you can add to a mobile application. While building...",
+    "time": "4 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "firebase",
+      "analytics",
+      "mobile"
+    ],
+    "publishedAt": "2026-07-25T16:40:49Z"
+  },
+  {
+    "id": 4013585,
+    "link": "https://dev.to/dainyjose/understanding-owasp-mobile-top-10-2025-a-guide-for-android-ios-developers-371p",
+    "title": "Understanding OWASP Mobile Top 10 (2025): A Guide for Android & iOS Developers",
+    "description": "Disclaimer: This article summarizes the concepts I learned while studying the OWASP Mobile Top 10...",
+    "time": "4 min read",
+    "topic": "security",
+    "tags": [
+      "security",
+      "owasp",
+      "mobile",
+      "developer"
+    ],
+    "publishedAt": "2026-06-28T16:32:01Z"
+  },
+  {
+    "id": 3795302,
+    "link": "https://dev.to/dainyjose/building-picture-in-picture-pip-mode-in-react-native-with-expo-and-typescript-af6",
+    "title": "Building Picture-in-Picture (PiP) Mode in React Native with Expo and TypeScript",
+    "description": "Picture-in-Picture (PiP) mode is one of the most useful features for media-based mobile applications....",
+    "time": "3 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "android",
+      "ios",
+      "mobile"
+    ],
+    "publishedAt": "2026-06-01T17:06:29Z"
+  },
+  {
+    "id": 3648085,
+    "link": "https://dev.to/dainyjose/complete-cicd-guide-for-react-native-apps-using-github-actions-4hh1",
+    "title": "Complete CI/CD Guide for React Native Apps Using GitHub Actions",
+    "description": "Automating builds, testing, and deployments can save hours of manual work in React Native projects....",
+    "time": "4 min read",
+    "topic": "cicd",
+    "tags": [
+      "cicd",
+      "github",
+      "reactnative",
+      "tutorial"
+    ],
+    "publishedAt": "2026-05-11T08:43:26Z"
+  },
+  {
+    "id": 3510310,
+    "link": "https://dev.to/dainyjose/preparing-your-ios-app-for-the-upcoming-sdk-requirements-april-2026-3l7f",
+    "title": "Preparing Your iOS App for the Upcoming SDK Requirements (April 2026)",
+    "description": "Apple has announced new minimum SDK requirements for App Store submissions starting April 28, 2026....",
+    "time": "2 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "xcode",
+      "expo",
+      "ios"
+    ],
+    "publishedAt": "2026-04-16T12:10:57Z"
+  },
+  {
+    "id": 3353846,
+    "link": "https://dev.to/dainyjose/implementing-firebase-crashlytics-in-react-native-12i3",
+    "title": "Implementing Firebase Crashlytics in React Native",
+    "description": "Firebase Crashlytics is a lightweight, real-time crash reporting tool that helps developers monitor,...",
+    "time": "3 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "firebase"
+    ],
+    "publishedAt": "2026-03-15T08:19:26Z"
+  },
+  {
+    "id": 3090468,
+    "link": "https://dev.to/dainyjose/real-time-location-tracking-live-route-updates-in-react-native-4g15",
+    "title": "Real-Time Location Tracking & Live Route Updates in React Native",
+    "description": "Introduction   In Part 3 we explored how to show nearby places and draw routes. Now it’s...",
+    "time": "2 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "mobile",
+      "development"
+    ],
+    "publishedAt": "2025-12-07T15:56:04Z"
+  },
+  {
+    "id": 3028523,
+    "link": "https://dev.to/dainyjose/showing-nearby-places-routes-in-react-native-maps-34b7",
+    "title": "Showing Nearby Places & Routes in React Native Maps",
+    "description": "Introduction   In Part 1 we integrated maps into React Native, and in Part 2 we built a...",
+    "time": "3 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "map",
+      "googlemapsapi"
+    ],
+    "publishedAt": "2025-12-01T02:18:54Z"
+  },
+  {
+    "id": 3028386,
+    "link": "https://dev.to/dainyjose/building-a-location-picker-in-react-native-maps-with-draggable-marker-address-lookup-1d00",
+    "title": "Building a Location Picker in React Native Maps (with Draggable Marker & Address Lookup)",
+    "description": "Introduction   In my previous post, I covered how to integrate Google Maps and display the...",
+    "time": "3 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "map",
+      "mobile",
+      "development"
+    ],
+    "publishedAt": "2025-11-23T17:59:06Z"
+  },
+  {
+    "id": 3025780,
+    "link": "https://dev.to/dainyjose/seamless-map-integration-in-react-native-a-complete-guide-29o7",
+    "title": "Seamless Map Integration in React Native: A Complete Guide",
+    "description": "Introduction   Integrating maps into a React Native app sounds simple — until you face...",
+    "time": "3 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "map",
+      "android",
+      "ios"
+    ],
+    "publishedAt": "2025-11-16T10:14:36Z"
+  },
+  {
+    "id": 2984956,
+    "link": "https://dev.to/dainyjose/step-by-step-guide-to-upgrading-your-react-native-expo-project-1fio",
+    "title": "Step-by-Step Guide to Upgrading Your React Native Expo Project",
+    "description": "Upgrading a React Native Expo project can seem intimidating — especially when juggling native...",
+    "time": "3 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "mobile",
+      "development",
+      "typescript"
+    ],
+    "publishedAt": "2025-11-02T16:31:06Z"
+  },
+  {
+    "id": 2984727,
+    "link": "https://dev.to/dainyjose/how-i-built-my-developer-portfolio-with-vite-react-and-bun-fast-modern-fully-customizable-410b",
+    "title": "How I Built My Developer Portfolio with Vite, React, and Bun — Fast, Modern & Fully Customizable",
+    "description": "A lightweight, modular portfolio built with Vite + React + TypeScript + Bun, designed to showcase...",
+    "time": "4 min read",
+    "topic": "react",
+    "tags": [
+      "react",
+      "vite",
+      "portfolio",
+      "webdev"
+    ],
+    "publishedAt": "2025-11-02T14:52:41Z"
+  },
+  {
+    "id": 2967473,
+    "link": "https://dev.to/dainyjose/advanced-push-local-notifications-in-react-native-with-firebase-and-notifee-part-2-2mn6",
+    "title": "Advanced Push & Local Notifications in React Native with Firebase and Notifee (Part 2)",
+    "description": "In the first part of this series, we built a complete Firebase Cloud Messaging (FCM) setup for React...",
+    "time": "4 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "firebase",
+      "mobile",
+      "notifications"
+    ],
+    "publishedAt": "2025-10-28T15:56:27Z"
+  },
+  {
+    "id": 2932843,
+    "link": "https://dev.to/dainyjose/implementing-push-notifications-in-react-native-using-firebase-and-notifee-ahl",
+    "title": "Implementing Push Notifications in React Native Using Firebase and Notifee",
+    "description": "Push notifications are one of the most effective ways to re-engage users and deliver timely...",
+    "time": "4 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "firebase",
+      "fcm",
+      "mobile"
+    ],
+    "publishedAt": "2025-10-17T05:24:55Z"
+  },
+  {
+    "id": 2860132,
+    "link": "https://dev.to/dainyjose/setting-up-react-native-expo-bare-typescript-development-environment-on-macos-38hi",
+    "title": "🚀 Setting Up React Native (Expo Bare + TypeScript) Development Environment on macOS",
+    "description": "If you’re starting with React Native (Expo Bare + TypeScript) on macOS, you need a complete setup for...",
+    "time": "2 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "typescript",
+      "mobile",
+      "tutorial"
+    ],
+    "publishedAt": "2025-09-22T06:00:51Z"
+  },
+  {
+    "id": 2852942,
+    "link": "https://dev.to/dainyjose/edge-to-edge-styling-in-react-native-on-android-15-2ihd",
+    "title": "Edge-to-Edge Styling in React Native on Android 15",
+    "description": "Google’s Android 15 pushes developers toward edge-to-edge design, encouraging apps to extend content...",
+    "time": "3 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "android",
+      "mobile",
+      "ui"
+    ],
+    "publishedAt": "2025-09-18T07:11:30Z"
+  },
+  {
+    "id": 2846703,
+    "link": "https://dev.to/dainyjose/git-complete-commands-cheat-sheet-for-developers-96j",
+    "title": "Git Complete Commands Cheat Sheet for Developers",
+    "description": "Git is one of the most essential tools in a developer’s workflow. Whether you’re working on solo...",
+    "time": "2 min read",
+    "topic": "git",
+    "tags": [
+      "git",
+      "programming",
+      "beginners",
+      "productivity"
+    ],
+    "publishedAt": "2025-09-15T12:00:02Z"
+  },
+  {
+    "id": 2840877,
+    "link": "https://dev.to/dainyjose/troubleshooting-16-kb-page-size-issues-2pfe",
+    "title": "🐞 Troubleshooting 16 KB Page Size Issues",
+    "description": "📖 This article is a continuation of my previous post: Understanding Google Play’s 16 KB Page Size...",
+    "time": "2 min read",
+    "topic": "mobile",
+    "tags": [
+      "mobile",
+      "development",
+      "android",
+      "programming"
+    ],
+    "publishedAt": "2025-09-12T09:45:44Z"
+  },
+  {
+    "id": 2840512,
+    "link": "https://dev.to/dainyjose/google-play-now-requires-16-kb-page-size-support-for-android-15-heres-how-to-test-fix-and-5b2g",
+    "title": "🚨 Google Play now requires 16 KB page size support for Android 15+. Here’s how to test, fix, and re-release your apps before Play Store rejects updates.",
+    "description": "📱 Understanding Google Play’s 16 KB Page Size Requirement for...",
+    "time": "1 min read",
+    "topic": "android",
+    "tags": [
+      "android",
+      "mobile",
+      "developers",
+      "googleplay"
+    ],
+    "publishedAt": "2025-09-12T06:58:32Z"
+  },
+  {
+    "id": 2840377,
+    "link": "https://dev.to/dainyjose/understanding-google-plays-16-kb-page-size-requirement-for-android-apps-phd",
+    "title": "📱 Understanding Google Play’s 16 KB Page Size Requirement for Android Apps",
+    "description": "Google recently introduced a new requirement for Android apps published on the Play Store: all apps...",
+    "time": "4 min read",
+    "topic": "android",
+    "tags": [
+      "android",
+      "mobile",
+      "developers",
+      "googleplay"
+    ],
+    "publishedAt": "2025-09-12T05:31:22Z"
+  },
+  {
+    "id": 2783495,
+    "link": "https://dev.to/dainyjose/the-life-of-a-react-native-developer-from-code-to-app-store-nnb",
+    "title": "The Life of a React Native Developer: From Code to App Store 🚀",
+    "description": "React Native empowers developers to build cross-platform mobile apps with a single...",
+    "time": "3 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "mobile",
+      "javascript",
+      "developerlife"
+    ],
+    "publishedAt": "2025-08-19T16:12:04Z"
+  },
+  {
+    "id": 2728976,
+    "link": "https://dev.to/dainyjose/razorpay-integration-in-react-native-with-nodejs-webhooks-and-mongodb-12dd",
+    "title": "Razorpay Integration in React Native with Node.js Webhooks and MongoDB",
+    "description": "🚀 Introduction   Integrating a secure and efficient payment system is crucial for modern...",
+    "time": "3 min read",
+    "topic": "reactnative",
+    "tags": [
+      "reactnative",
+      "node",
+      "mongodb",
+      "razorpay"
+    ],
+    "publishedAt": "2025-07-28T17:36:06Z"
+  },
+  {
+    "id": 2673867,
+    "link": "https://dev.to/dainyjose/15-must-have-vs-code-extensions-for-react-native-development-2025-5g37",
+    "title": "15 Must-Have VS Code Extensions for React Native Development (2025)",
+    "description": "If you’re building apps with React Native, having the right VS Code setup can seriously boost your...",
+    "time": "4 min read",
+    "topic": "vscode",
+    "tags": [
+      "vscode",
+      "reactnative",
+      "productivity",
+      "typescript"
+    ],
+    "publishedAt": "2025-07-10T10:07:38Z"
+  }
+]
