@@ -15,31 +15,33 @@ jobs:
 
     steps:
       - name: Checkout master
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: master
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Fetch latest DEV.to blogs
-        run: node scripts/fetchBlogs.mjs
+        run: node src/scripts/fetchBlogs.mjs
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet src/data/blogs.json || echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Commit updated blogs
+        if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add src/data/blogs.json
-
-          if git diff --cached --quiet; then
-            echo "No blog changes"
-            exit 0
-          fi
-
-          commit_user_name: dainyjose
-          commit_user_email: dainyjose.mary@gmail.com
-          commit_message: "docs: update latest DEV.to articles"
+          git commit -m "chore: update Dev.to blogs"
           git push origin master
