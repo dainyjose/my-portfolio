@@ -12,12 +12,14 @@ jobs:
 
     permissions:
       contents: write
+      pull-requests: write
 
     steps:
       - name: Checkout master
         uses: actions/checkout@v7
         with:
           ref: master
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
@@ -30,7 +32,16 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet src/data/blogs.json || echo "changed=true" >> "$GITHUB_OUTPUT"
+          if git diff --quiet src/data/blogs.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create/update automation branch
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git checkout -B automation/update-devto-blogs
 
       - name: Commit updated blogs
         if: steps.changes.outputs.changed == 'true'
@@ -40,4 +51,31 @@ jobs:
 
           git add src/data/blogs.json
           git commit -m "chore: update Dev.to blogs"
-          git push origin master
+
+      - name: Push automation branch
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git push --force-with-lease origin automation/update-devto-blogs
+
+      - name: Create Pull Request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR_NUMBER=$(gh pr list \
+            --base master \
+            --head automation/update-devto-blogs \
+            --state open \
+            --json number \
+            --jq '.[0].number')
+
+          if [ -z "$PR_NUMBER" ]; then
+            gh pr create \
+              --base master \
+              --head automation/update-devto-blogs \
+              --title "chore: update Dev.to blogs" \
+              --body "Automated update of Dev.to blog data."
+          else
+            echo "Existing PR #$PR_NUMBER found. Updating it."
+          fi
+
