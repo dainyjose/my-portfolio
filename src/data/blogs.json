@@ -1,5 +1,19 @@
 [
   {
+    "id": 4558174,
+    "link": "https://dev.to/dainyjose/android-system-back-button-closes-the-app-after-upgrading-to-target-sdk-36-react-native-fix-475g",
+    "title": "Android System Back Button Closes the App After Upgrading to Target SDK 36 — React Native Fix",
+    "description": "If you're maintaining a React Native Android application and recently upgraded your project to target...",
+    "time": "7 min read",
+    "topic": "android",
+    "tags": [
+      "android",
+      "reactnative",
+      "debugging"
+    ],
+    "publishedAt": "2026-09-02T17:28:17Z"
+  },
+  {
     "id": 4254511,
     "link": "https://dev.to/dainyjose/google-play-requires-android-16-api-level-36-by-august-31-2026-react-native-migration-guide-1d51",
     "title": "Google Play Requires Android 16 (API Level 36) by August 31, 2026 — React Native Migration Guide",
