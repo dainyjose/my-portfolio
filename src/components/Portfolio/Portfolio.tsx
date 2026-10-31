@@ -57,15 +57,6 @@ const Portfolio = () => {
       technologies: "React Native | TypeScript | Tidio",
       github: "https://github.com/dainyjose/tidio_chatbot_support",
     },
-
-    {
-      id: 6,
-      title: "Fuzzy Search with Fuse.js",
-      description:
-        "Implemented client-side fuzzy search to provide fast and flexible matching across application datasets, improving search accuracy and user experience.",
-      technologies: "React Native | TypeScript | Fuse.js",
-      github: "https://github.com/dainyjose/search_using_fuse_js",
-    },
   ];
   return (
     <section id="portfolio">
