@@ -1,47 +1,30 @@
-import { useEffect, useState } from "react";
+import { TbArrowBigRightLines } from "react-icons/tb";
+import { TypeAnimation } from "react-type-animation";
 import HeaderResume from "./HeaderResume";
 import HeaderSocials from "./HeaderSocials";
-import { TbArrowBigRightLines } from "react-icons/tb";
 import "./header.css";
-import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
-  // const texts = [
-  //   "React Native Developer",
-  //   "TypeScript | Redux Expert",
-  //   "Building Production Apps",
-  // ];
-  // const [index, setIndex] = useState(0);
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setIndex((prev) => (prev + 1) % texts.length);
-  //   }, 2000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
   return (
     <header id="home">
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Dainy Jose</h1>
+
         <h3 className="text-light">
-          {/* {texts[index]} */}
-          {/* React Native Developer Building Scalable, Production-Ready Mobile Apps
-          for Real Businesses */}
           <TypeAnimation
             sequence={[
               "Senior Software Developer",
               2200,
-              "Building Scalable Mobile Applications",
+              "React Native Developer Building Scalable Mobile Apps",
+              2200,
+              "Android & iOS Application Development",
               2200,
               "Mobile Architecture & Technical Ownership",
               2200,
-              "React Native • TypeScript • Node.js",
-              2200,
               "Mentoring & Growing Junior Developers",
               2200,
-              "Building Production-Ready Software",
+              "4+ Years of Software Development Experience",
               2200,
             ]}
             speed={10}
@@ -49,11 +32,13 @@ const Header = () => {
             repeat={Infinity}
           />
         </h3>
+
         <h5 className="text-light header_tech_skill">
-          React Native • TypeScript • Redux • Node.js • Firebase • REST APIs • Payments • App Store
-          Deployment
+          React Native • TypeScript • Redux • Expo Bare Workflow • Android & iOS
         </h5>
+
         <HeaderResume />
+
         <a href="#contact" className="scroll__down">
           Scroll Down.......
           <TbArrowBigRightLines />
