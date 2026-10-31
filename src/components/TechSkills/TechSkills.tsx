@@ -13,30 +13,42 @@ import {
   SiJira,
   SiAndroidstudio,
   SiXcode,
+  SiNextdotjs,
+  SiPrisma,
+  SiPostgresql,
+  SiVercel,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { FaAndroid, FaApple, FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
+import {
+  FaAndroid,
+  FaApple,
+  FaGooglePlay,
+  FaAppStoreIos,
+} from "react-icons/fa";
 
 import "./TechSkills.css";
 
 const TechSkills = () => {
   const techStack = [
-    // 🔹 Mobile Development (Highest Priority)
+    // Mobile Development
     { icon: <DiReact />, name: "React Native" },
     { icon: <SiTypescript />, name: "TypeScript" },
     { icon: <DiJavascript1 />, name: "JavaScript" },
-    { icon: <SiRedux />, name: "Redux" },
-    { icon: <SiExpo />, name: "Expo" },
+    { icon: <SiRedux />, name: "Redux Toolkit" },
+    { icon: <SiExpo />, name: "Expo Bare Workflow" },
 
-    // 🔹 Backend & APIs
+    // Web & Backend
+    { icon: <SiNextdotjs />, name: "Next.js" },
     { icon: <DiNodejs />, name: "Node.js" },
     { icon: <SiExpress />, name: "Express.js" },
-    { icon: <SiFirebase />, name: "Firebase" },
-
-    // 🔹 Database
+    { icon: <SiPrisma />, name: "Prisma" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
     { icon: <SiMysql />, name: "MySQL / SQL" },
 
-    // 🔹 Development Tools
+    // Cloud & Analytics
+    { icon: <SiFirebase />, name: "Firebase" },
+
+    // Development Tools
     { icon: <DiGit />, name: "Git / Git Bash" },
     { icon: <SiPostman />, name: "Postman" },
     { icon: <SiBitbucket />, name: "Bitbucket" },
@@ -46,22 +58,25 @@ const TechSkills = () => {
     { icon: <SiJira />, name: "Jira" },
     { icon: <SiFigma />, name: "Figma" },
 
-    // 🔹 Deployment & Hosting
+    // Deployment & Hosting
     { icon: <SiNetlify />, name: "Netlify" },
+    { icon: <SiVercel />, name: "Vercel" },
 
-    // 🔹 Platforms
+    // Platforms
     { icon: <FaAndroid />, name: "Android" },
     { icon: <FaApple />, name: "iOS" },
 
-    // 🔹 App Publishing
+    // App Publishing
     { icon: <FaGooglePlay />, name: "Google Play Console" },
     { icon: <FaAppStoreIos />, name: "App Store Connect" },
   ];
+
   return (
     <section id="tech_skill">
       <h5>The Skills I Have</h5>
       <h2>Skills</h2>
-      <div className=" container tech_skill-container">
+
+      <div className="container tech_skill-container">
         {techStack.map((tech, index) => (
           <div key={index} className="tech-icons">
             {tech.icon}
