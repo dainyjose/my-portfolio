@@ -15,11 +15,13 @@ const Blogs = () => {
 
   return (
     <section id="blogs">
-      <h5>My Latest Dev.to Posts</h5>
-      <h2>Blogs</h2>
+      <h5>Technical Writing & Knowledge Sharing</h5>
+      <h2>Blogs & Articles</h2>
       <p className="blogs_subtitle">
-        Writing about real-world React Native development challenges, debugging, performance
-        optimization, mobile architecture, and deployment workflows.
+        I share practical insights, real-world development experiences, and
+        technical learnings through Dev.to and StackQuill, covering React
+        Native, JavaScript, TypeScript, mobile architecture, debugging, and
+        more.
       </p>
       <Swiper
         className="container blogs__container"
@@ -29,7 +31,7 @@ const Blogs = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 9000, disableOnInteraction: false }} // auto slide
       >
-        {blogs.slice(0, 15).map(blog => (
+        {blogs.slice(0, 15).map((blog) => (
           <SwiperSlide className="blogs_card" key={blog.id}>
             <span className="blog-topic">{blog.topic}</span>
             <h5 className="blog_title">{blog.title}</h5>
@@ -50,6 +52,18 @@ const Blogs = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="blogs__platform">
+        <p>
+          Also, explore StackQuill — my personal developer blogging platform.
+        </p>
+        <a
+          href="https://stackquill-web.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explore StackQuill →
+        </a>
+      </div>
     </section>
   );
 };

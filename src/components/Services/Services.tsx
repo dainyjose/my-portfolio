@@ -1,4 +1,15 @@
-import { FaMobileAlt, FaCode, FaTools, FaServer, FaRocket, FaBug } from "react-icons/fa";
+import {
+  FaMobileAlt,
+  FaCode,
+  FaTools,
+  FaServer,
+  FaRocket,
+  FaBug,
+  FaPenNib,
+  FaFileAlt,
+  FaDatabase,
+  FaChartLine,
+} from "react-icons/fa";
 import {
   MdNotificationsActive,
   MdPayment,
@@ -59,6 +70,22 @@ const Services = () => {
     {
       icon: <FaCode />,
       title: "Developer Mentoring & Code Review",
+    },
+    {
+      icon: <FaPenNib />,
+      title: "Technical Blogging & Knowledge Sharing",
+    },
+    {
+      icon: <FaDatabase />,
+      title: "Database Design & Management",
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Mobile Analytics & Crash Reporting",
+    },
+    {
+      icon: <FaFileAlt />,
+      title: "API Documentation & Developer Guides",
     },
   ];
 

@@ -21,7 +21,7 @@
 
 .portfolio__item-cta {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: auto;
 }
 
