@@ -1,21 +1,18 @@
 import { BsLinkedin } from "react-icons/bs";
 import { FaDev, FaGithub } from "react-icons/fa";
+import { TbArticle } from "react-icons/tb";
+
 import "./footer.css";
 
 const Footer = () => {
-  const getYear = () => {
-    const currentYear = new Date().getFullYear();
-    return currentYear;
-  };
+  const getYear = () => new Date().getFullYear();
 
   return (
     <footer id="footer">
-      <a
-        href="#home"
-        className="footer__logo"
-      >
+      <a href="#home" className="footer__logo">
         Dainy Jose
       </a>
+
       <ul className="permalinks">
         <li>
           <a href="#home">Home</a>
@@ -24,10 +21,10 @@ const Footer = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#tech_skill"> Skills</a>
+          <a href="#tech_skill">Skills</a>
         </li>
         <li>
-          <a href="#services"> Services</a>
+          <a href="#services">Services</a>
         </li>
         <li>
           <a href="#portfolio">Work</a>
@@ -48,29 +45,45 @@ const Footer = () => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
+
       <div className="footer__socials">
         <a
           href="https://www.linkedin.com/in/dainyjose/"
           target="_blank"
           rel="noreferrer"
+          aria-label="LinkedIn"
         >
           <BsLinkedin />
         </a>
+
         <a
           href="https://github.com/dainyjose"
           target="_blank"
           rel="noreferrer"
+          aria-label="GitHub"
         >
           <FaGithub />
         </a>
+
         <a
           href="https://dev.to/dainyjose"
           target="_blank"
           rel="noreferrer"
+          aria-label="Dev.to"
         >
           <FaDev />
         </a>
+
+        <a
+          href="https://stackquill-web.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="StackQuill"
+        >
+          <TbArticle />
+        </a>
       </div>
+
       <div className="footer__copyright">
         <small>
           &copy; {getYear()}. Designed & Developed with ❤️ by <b>Dainy Jose</b>
