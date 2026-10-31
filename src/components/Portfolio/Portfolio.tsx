@@ -1,14 +1,24 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import "./Portfolio.css";
 
 const Portfolio = () => {
   const projects = [
     {
+      id: 7,
+      title: "StackQuill – Developer Blogging Platform",
+      description:
+        "Designed and developed a personal developer blogging platform to publish technical articles, document software development experiences, and share practical engineering knowledge. Built with a modern web stack and deployed for public access.",
+      technologies: "Next.js | TypeScript | Prisma | PostgreSQL",
+      github: "https://github.com/dainyjose/stackquill-web",
+      live: "https://stackquill-web.vercel.app/",
+    },
+    {
       id: 1,
       title: "React Native Expo Bare Template",
       description:
         "Built a reusable React Native starter architecture with TypeScript, Redux, navigation, environment configuration, and common project setup to accelerate development and maintain consistency across applications.",
-      technologies: "React Native | Expo Bare | TypeScript | Redux | React Navigation",
+      technologies:
+        "React Native | Expo Bare | TypeScript | Redux | React Navigation",
       github: "https://github.com/dainyjose/rn-expo-typescript-bare-template",
     },
 
@@ -73,16 +83,29 @@ const Portfolio = () => {
                 <strong>Technologies:</strong> {pro.technologies}
               </p>
             </div>
+
             <div className="portfolio__item-cta">
               <a
                 href={pro.github}
                 target="_blank"
-                className=" portfolio_github_btn"
+                className="portfolio_github_btn"
                 rel="noreferrer"
               >
                 <FaGithub className="portfolio_github" />
                 GitHub
               </a>
+
+              {pro.live && (
+                <a
+                  href={pro.live}
+                  target="_blank"
+                  className="portfolio_github_btn"
+                  rel="noreferrer"
+                >
+                  <FaExternalLinkAlt className="portfolio_github" />
+                  Live Demo
+                </a>
+              )}
             </div>
           </article>
         ))}
