@@ -77,6 +77,26 @@
   background: var(--color-primary);
 }
 
+.blogs__platform {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--color-light);
+  font-size: 0.95rem;
+}
+
+.blogs__platform a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.3rem;
+  transition: var(--transition);
+}
+
+.blogs__platform a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1024px) {
   .container.blogs__container {
     width: 60%;
