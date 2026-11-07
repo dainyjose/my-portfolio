@@ -1,5 +1,20 @@
 [
   {
+    "id": 4951931,
+    "link": "https://dev.to/dainyjose/i-built-stackquill-my-journey-from-developer-to-product-builder-4bdh",
+    "title": "I Built StackQuill: My Journey from Developer to Product Builder",
+    "description": "Every developer has ideas for side projects. Some stay in our notes, some become small experiments,...",
+    "time": "5 min read",
+    "topic": "webdev",
+    "tags": [
+      "webdev",
+      "programming",
+      "buildinpublic",
+      "nextjs"
+    ],
+    "publishedAt": "2026-10-31T18:30:17Z"
+  },
+  {
     "id": 4558174,
     "link": "https://dev.to/dainyjose/android-system-back-button-closes-the-app-after-upgrading-to-target-sdk-36-react-native-fix-475g",
     "title": "Android System Back Button Closes the App After Upgrading to Target SDK 36 — React Native Fix",
